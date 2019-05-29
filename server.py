@@ -32,9 +32,9 @@ class BaseRequestHandler(RequestHandler):
 class IndexHandler(BaseRequestHandler):
     def get(self):
         print(self.redis.get("a"))
-        # cursor = self.db.cursor()
-        # cursor.execute("show tables;")
-        # print(cursor.fetchall())
+        cursor = self.db.cursor()
+        cursor.execute("show tables;")
+        print(cursor.fetchall())
         self.write("ok")
 
 
