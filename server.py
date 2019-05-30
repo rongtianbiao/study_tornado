@@ -5,7 +5,7 @@ from tornado.httpserver import HTTPServer
 from tornado.options import options, define, parse_command_line
 import torndb
 import redis
-from study_tornado import config
+import config
 
 define("port", default=9999, type=int, help="端口号")
 
