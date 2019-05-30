@@ -9,5 +9,6 @@ mysql_options = dict(
 # Redis配置参数
 redis_options = dict(
     host="127.0.0.1",
-    port=6379
+    port=6379,
+    db=0
 )
